@@ -76,7 +76,7 @@ Si en el pipeline ocurre una falla no se debe permitir el despliege ya que el pi
 
 ## a ¿Qué información debería registrarse?
 
-
+como hago para evitar un comit en github
 ## b ¿Qué NO debería registrarse (por seguridad)?
 
 - Contraseñas
