@@ -5,6 +5,8 @@
 
 ## 1 funcionalidades 
 
+![alt text](image.png)
+
 ## 2 Diferencia entre Validaciones de input y Validaciones de negocio
 
 
