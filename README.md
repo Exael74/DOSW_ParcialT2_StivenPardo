@@ -4,7 +4,7 @@
 **Grupo:** 2
 
 ## 1 funcionalidades
-
+![](https://github.com/Exael74/DOSW_ParcialT2_StivenPardo/blob/develop/docs/images/requerimientos.png)
 ## 2 Diferencia entre Validaciones de input y Validaciones de negocio
 
 El **input** se validaria cosas como los tipos rangos como que el origen no sea vacio.
@@ -68,8 +68,7 @@ Las pruebas son importantes para validar las reglas de negocio, ya que nos muest
 - Realizar el analizis estatico del codigo para ver si tiene una buena calidad
 - Al final Realizar el despliege
 
-## 14
-# ¿Qué sucede si una prueba falla en el pipeline? ¿Debe permitirse el despliegue?
+## 14 ¿Qué sucede si una prueba falla en el pipeline? ¿Debe permitirse el despliegue?
 
 Si en el pipeline ocurre una falla no se debe permitir el despliege ya que el pipeline nos indica que el programa cumple los requisitos que tenemos y asegura la buena funcionalidad del codigo
 
@@ -77,7 +76,7 @@ Si en el pipeline ocurre una falla no se debe permitir el despliege ya que el pi
 
 ## a ¿Qué información debería registrarse?
 
-como hago para evitar un comit en github
+
 ## b ¿Qué NO debería registrarse (por seguridad)?
 
 - Contraseñas
