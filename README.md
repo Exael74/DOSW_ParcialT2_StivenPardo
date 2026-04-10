@@ -22,14 +22,15 @@ El de **negocio** valida las reglas que nos dieran para hacer el programa como q
 
 ## 4 Diagrama de Componentes general
 
+![](https://github.com/Exael74/DOSW_ParcialT2_StivenPardo/blob/featureTeorica/docs/uml/Diagrama%20de%20componentes%20general.png)
 
 ## 5 ¿Qué problemas pueden surgir si no se separan correctamente las capas dentro de un proyecto de software?
 
 Se pueden generar varios problemas como un cambio BD que pueda afectar a Backend o Front, tambien puede generar dificultad en hacer pruebas y que es muy poco escalable ya que cualquier cambio afecta todo el programa 
 
-## 6 Diagrama de componentes
+## 6 Diagrama de componentes especificos
 
-
+![]([https://github.com/Exael74/DOSW_ParcialT2_StivenPardo/blob/featureTeorica/docs/uml/Diagrama%20de%20componentes%20general.png](https://github.com/Exael74/DOSW_ParcialT2_StivenPardo/blob/featureTeorica/docs/uml/Diagramas%20de%20componentes%20especificos.png))
 
 ## 7 ¿Cuáles son las diferencias entre un validador, una utilidad y un servicio?
 
