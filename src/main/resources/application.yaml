@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: DOSW-ParcialT2
+
+  # ── Persistencia Relacional (PostgreSQL / JPA) ──────────────────────────────
+  datasource:
+    url: jdbc:postgresql://localhost:5432/parcial_db
+    username: myuser
+    password: 1507Ezio.Creed
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  # ── Persistencia No Relacional (MongoDB) ────────────────────────────────────
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/parcial_mongo_db
+      # Si usas Atlas u otro host autenticado, usa esta forma en su lugar:
+      # uri: mongodb+srv://<user>:<password>@cluster0.xxxxx.mongodb.net/parcial_mongo_db?retryWrites=true&w=majority
+      username: mymongouser
+      password: mymongopassword
+      authentication-database: admin
+
+# ── JWT / Spring Security ─────────────────────────────────────────────────────
+jwt:
+  secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+  expiration: 86400000 # 24 horas
