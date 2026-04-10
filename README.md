@@ -3,7 +3,8 @@
 **Nombre Completo:** Stiven Pardo  
 **Grupo:** 2
 
-
+Juan Sebastian: 7 Puntos, 3 llegada temprano, 2 de participacion, 2 de puntos generales
+Stiven Pardo: 4 puntos, 2 puntos generales, 2 puntos por funcionalidades de la biblioteca
 ## 1 funcionalidades
 ![](https://github.com/Exael74/DOSW_ParcialT2_StivenPardo/blob/develop/docs/images/requerimientos.png)
 
