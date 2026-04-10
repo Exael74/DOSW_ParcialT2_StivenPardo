@@ -399,3 +399,5 @@ Ve a tu repositorio → **Settings → Secrets and variables → Actions** y agr
 | Deploy Azure CLI | `az webapp deploy --src-path target/*.jar --type jar ...` |
 | Build Docker local | `docker build -t dosw-parcial-t2 .` |
 | Run Docker local | `docker run -p 8080:8080 dosw-parcial-t2` |
+
+:D
