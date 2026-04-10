@@ -8,3 +8,9 @@
 ### Herramienta de Modelado (Lucidchart / Draw.io / Miro)
 
 ### Herramienta de Diseño de Interfaces (Figma)
+
+
+
+
+
+https://github.com/6Sebastian6/PreParcial-T2/tree/develop
