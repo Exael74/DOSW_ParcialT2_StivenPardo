@@ -3,8 +3,12 @@
 **Nombre Completo:** Stiven Pardo  
 **Grupo:** 2
 
+
 ## 1 funcionalidades
 ![](https://github.com/Exael74/DOSW_ParcialT2_StivenPardo/blob/develop/docs/images/requerimientos.png)
+
+![alt text](image.png)
+
 ## 2 Diferencia entre Validaciones de input y Validaciones de negocio
 
 El **input** se validaria cosas como los tipos rangos como que el origen no sea vacio.
