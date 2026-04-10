@@ -68,8 +68,7 @@ Las pruebas son importantes para validar las reglas de negocio, ya que nos muest
 - Realizar el analizis estatico del codigo para ver si tiene una buena calidad
 - Al final Realizar el despliege
 
-## 14
-# ¿Qué sucede si una prueba falla en el pipeline? ¿Debe permitirse el despliegue?
+## 14 ¿Qué sucede si una prueba falla en el pipeline? ¿Debe permitirse el despliegue?
 
 Si en el pipeline ocurre una falla no se debe permitir el despliege ya que el pipeline nos indica que el programa cumple los requisitos que tenemos y asegura la buena funcionalidad del codigo
 
