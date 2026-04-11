@@ -427,6 +427,55 @@ Se pueden generar varios problemas como un cambio BD que pueda afectar a Backend
 
 ## 10 2 indices para mejorar el rendimiento de las consultas
 
+### Indice 1 — users.email
+
+La consulta de autenticacion (login) busca un usuario por su email en cada peticion. Sin un indice, la base de datos tiene que recorrer toda la tabla de usuarios fila por fila (Full Table Scan) para encontrar el registro. Al agregar un indice sobre la columna email, la base de datos puede ubicar el usuario directamente en tiempo O(log n), lo que mejora considerablemente el tiempo de respuesta a medida que crece la cantidad de usuarios registrados.
+
+```sql
+CREATE UNIQUE INDEX idx_users_email ON users(email);
+```
+
+En JPA/Hibernate esto se expresa en la entidad:
+
+```java
+@Table(name = "users", indexes = {
+    @Index(name = "idx_users_email", columnList = "email", unique = true)
+})
+```
+
+Consulta que se beneficia:
+
+```sql
+SELECT * FROM users WHERE email = 'spardo@escuela.edu.co';
+```
+
+---
+
+### Indice 2 — trips(passenger_id, status)
+
+Las dos consultas mas frecuentes sobre la tabla de viajes son: verificar si un pasajero ya tiene un viaje activo antes de crear uno nuevo (passenger_id + status IN ('SOLICITADO','EN_CURSO')) y consultar el historial de viajes finalizados o cancelados de un pasajero (passenger_id + status IN ('FINALIZADO','CANCELADO')). Ambas filtran siempre por passenger_id y status juntos, por lo que un indice compuesto sobre esas dos columnas en ese orden permite que la base de datos resuelva las dos consultas sin escanear toda la tabla.
+
+```sql
+CREATE INDEX idx_trips_passenger_status ON trips(passenger_id, status);
+```
+
+En JPA/Hibernate esto se expresa en la entidad:
+
+```java
+@Table(name = "trips", indexes = {
+    @Index(name = "idx_trips_passenger_status", columnList = "passenger_id, status")
+})
+```
+
+Consultas que se benefician:
+
+```sql
+-- Validacion de negocio: el pasajero no puede tener mas de 1 viaje activo
+SELECT * FROM trips WHERE passenger_id = 'p001' AND status IN ('SOLICITADO', 'EN_CURSO');
+
+-- Historial de viajes del pasajero
+SELECT * FROM trips WHERE passenger_id = 'p001' AND status IN ('FINALIZADO', 'CANCELADO');
+```
 
 
 ## 11 TDD para Solicitar viaje 
