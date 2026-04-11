@@ -72,3 +72,6 @@ Dockerfile
 
 # Gradle
 .gradle/
+
+#class 
+*.class
