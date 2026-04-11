@@ -52,7 +52,7 @@ Se pueden generar varios problemas como un cambio BD que pueda afectar a Backend
 
 ## 9 Diagrama de entidad relacion
 
-![](https://github.com/Exael74/DOSW_ParcialT_StivenPardo/blob/featureTeorica/docs/uml/Diagrama%20Entidad-Relaci%C3%B3n.png)
+![](https://github.com/Exael74/DOSW_ParcialT2_StivenPardo/blob/featureTeorica/docs/uml/Diagrama%20Entidad-Relaci%C3%B3n.png)
 
 ## 10 2 indices para mejorar el rendimiento de las consultas
 
