@@ -407,7 +407,7 @@ Se pueden generar varios problemas como un cambio BD que pueda afectar a Backend
 
 ## 6 Diagrama de componentes especificos
 
-![](https://github.com/Exael74/DOSW_ParcialT2_StivenPardo/blob/featureTeorica/docs/uml/Diagramas%20de%20componentes%20especificos.png)
+![](https://github.com/Exael74/DOSW_ParcialT2_StivenPardo/blob/develop/docs/uml/Diagrama%20de%20Componentes%20Espec%C3%ADficos.png)
 
 ## 7 ¿Cuáles son las diferencias entre un validador, una utilidad y un servicio?
 
@@ -424,6 +424,7 @@ Se pueden generar varios problemas como un cambio BD que pueda afectar a Backend
 
 ## 9 Diagrama de entidad relacion
 
+![](https://github.com/Exael74/DOSW_ParcialT2_StivenPardo/blob/featureTeorica/docs/uml/Diagrama%20Entidad-Relaci%C3%B3n.png)
 
 ## 10 2 indices para mejorar el rendimiento de las consultas
 
@@ -480,6 +481,17 @@ SELECT * FROM trips WHERE passenger_id = 'p001' AND status IN ('FINALIZADO', 'CA
 
 ## 11 TDD para Solicitar viaje 
 
+# Fase RED
+
+Primero escribiríamos las pruebas para que fallen, ya que no tenemos código, por eso todas las pruebas fallaran. En este caso revisamos el comportamiento que estos tendrán.
+
+# Fase Green
+
+Ya escribimos el código para que las pruebas pasen, aquí buscamos que los test sean exitosos con la lógica que tenemos
+
+# Fase Refactor
+
+Ya con las pruebas pasadas, ahora si nos centramos en que el código tenga mas calidad y sea mas limpio para una mejor funcionalidad
 
 
 ## 12 Como las pruebas garantizan el cumplimiento de las reglas de negocio y la integridad del sistema
@@ -502,6 +514,9 @@ Si en el pipeline ocurre una falla no se debe permitir el despliege ya que el pi
 
 ## a ¿Qué información debería registrarse?
 
+- La fecha y hora en la que ocurrio el error
+- El endpoint y el metodo HTTP que se utilizo
+- El mensaje de error que retorno
 
 ## b ¿Qué NO debería registrarse (por seguridad)?
 
