@@ -59,6 +59,17 @@ Se pueden generar varios problemas como un cambio BD que pueda afectar a Backend
 
 ## 11 TDD para Solicitar viaje 
 
+# Fase RED
+
+Primero escribiríamos las pruebas para que fallen, ya que no tenemos código, por eso todas las pruebas fallaran. En este caso revisamos el comportamiento que estos tendrán.
+
+# Fase Green
+
+Ya escribimos el código para que las pruebas pasen, aquí buscamos que los test sean exitosos con la lógica que tenemos
+
+# Fase Refactor
+
+Ya con las pruebas pasadas, ahora si nos centramos en que el código tenga mas calidad y sea mas limpio para una mejor funcionalidad
 
 
 ## 12 Como las pruebas garantizan el cumplimiento de las reglas de negocio y la integridad del sistema
@@ -81,6 +92,9 @@ Si en el pipeline ocurre una falla no se debe permitir el despliege ya que el pi
 
 ## a ¿Qué información debería registrarse?
 
+- La fecha y hora en la que ocurrio el error
+- El endpoint y el metodo HTTP que se utilizo
+- El mensaje de error que retorno
 
 ## b ¿Qué NO debería registrarse (por seguridad)?
 
