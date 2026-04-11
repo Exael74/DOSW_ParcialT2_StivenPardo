@@ -1,9 +1,9 @@
 package edu.dosw.parcial.core.validators;
 import edu.dosw.parcial.core.models.User;
-import edu.dosw.parcial.core.models.UserRole;
 import edu.dosw.parcial.persistence.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
+import edu.dosw.parcial.core.models.UserRole;
 
 @Component
 @RequiredArgsConstructor
