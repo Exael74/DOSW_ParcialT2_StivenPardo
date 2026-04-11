@@ -374,19 +374,19 @@
 
 ## 2 Diferencia entre Validaciones de input y Validaciones de negocio
 
-Las **validaciones de input** se realizan en la capa del controlador, antes de que la lógica de negocio intervenga. Verifican la estructura, el formato y la integridad básica de los datos recibidos sin necesidad de consultar el estado del sistema. Ejemplos:
+Las validaciones de input se realizan en la capa del controlador, antes de que la lógica de negocio intervenga. Verifican la estructura, el formato y la integridad básica de los datos recibidos sin necesidad de consultar el estado del sistema. Ejemplos:
 - Que un campo no llegue vacío o nulo (`@NotBlank`)
 - Que el email tenga formato válido (`@Email`)
 - Que un número esté dentro de un rango permitido (`@Min`, `@Max`)
 - Que la longitud de un campo sea la esperada (`@Size`)
 
-Las **validaciones de negocio** se ejecutan en la capa de servicios o validadores y evalúan si los datos cumplen con las reglas propias del dominio de la aplicación. Requieren consultar el estado actual del sistema. Ejemplos:
+Las validaciones de negocio se ejecutan en la capa de servicios o validadores y evalúan si los datos cumplen con las reglas propias del dominio de la aplicación. Requieren consultar el estado actual del sistema. Ejemplos:
 - Que el email sea del dominio institucional `@escuela.edu.co`
 - Que un conductor NO pueda solicitar un viaje (violación de rol)
 - Que un pasajero no tenga más de 1 viaje activo simultáneamente
 - Que el correo no esté ya registrado en la base de datos
 
-> **Diferencia clave:** Las validaciones de input garantizan la *integridad de formato* de los datos, mientras que las de negocio garantizan la *coherencia del dominio* y las reglas de la aplicación.
+Podemos entonces concluir que Las validaciones de input garantizan la integridad de formato de los datos, mientras que las de negocio garantizan la coherencia del dominio y las reglas de la aplicación.
 
 ## 3 Diferencias entre autenticación, autorización e integridad
 
