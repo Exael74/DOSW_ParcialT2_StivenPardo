@@ -1,5 +1,7 @@
 package edu.dosw.parcial.core.services;
+import edu.dosw.parcial.core.models.User;
 
-public class UserService {
-    
+
+public interface UserService {
+    User register(User user);
 }

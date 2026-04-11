@@ -1,5 +1,13 @@
 package edu.dosw.parcial.persistence.repositories;
+import edu.dosw.parcial.persistence.entities.UserEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.Optional;
 
-public class UserRepository {
+
+
+public interface UserRepository extends JpaRepository<UserEntity, String> {
+
+    Optional<UserEntity> findByEmail(String email);
+    boolean existsByEmail(String email);
     
 }
