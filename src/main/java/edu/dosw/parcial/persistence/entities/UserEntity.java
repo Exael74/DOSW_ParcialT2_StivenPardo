@@ -10,8 +10,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Index;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
+import java.util.List;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -45,4 +48,10 @@ public class UserEntity {
     private UserRole role;
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private VehicleEntity vehicle;
+
+    @OneToMany(mappedBy = "passenger")
+    private List<TripEntity> tripsAsPassenger;
+
+    @OneToMany(mappedBy = "driver")
+    private List<TripEntity> tripsAsDriver;
 }

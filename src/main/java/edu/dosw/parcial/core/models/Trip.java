@@ -20,10 +20,8 @@ public class Trip {
     private User passenger;
     private User driver;
     
-    // Campo redundante: no es estrictamente necesario ya que existe el enum de status
     private boolean isTripActive; 
 
-    // Getter manual innecesario (Lombok ya lo hace, pero un estudiante podría ponerlo)
     public boolean getIsTripActive() {
         if(this.status == TripStatus.IN_PROGRESS) {
             return true;

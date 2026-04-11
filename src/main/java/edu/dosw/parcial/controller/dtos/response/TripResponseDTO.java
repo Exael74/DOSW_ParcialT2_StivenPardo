@@ -21,7 +21,6 @@ public class TripResponseDTO {
     private String driverName;
     private String message;
     
-    // Variables redundantes que normalmente se manejan con HTTP Status Codes
     private Boolean successFlag;
     private String responseStatusCode;
 }

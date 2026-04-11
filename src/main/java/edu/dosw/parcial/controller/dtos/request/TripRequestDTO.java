@@ -17,11 +17,11 @@ public class TripRequestDTO {
     @NotBlank(message = "El ID del pasajero es obligatorio")
     private String passengerId;
 
-    @NotNull(message = "El origen no puede ser nulo") // Redundante con NotBlank
+    @NotNull(message = "El origen no puede ser nulo")
     @NotBlank(message = "El origen es obligatorio")
     private String origin;
 
-    @NotNull(message = "El destino no debe estar nulo") // Redundante con NotBlank
+    @NotNull(message = "El destino no debe estar nulo")
     @NotBlank(message = "El destino es obligatorio")
     private String destination;
 
@@ -29,6 +29,5 @@ public class TripRequestDTO {
     @DecimalMin(value = "0.0", inclusive = false, message = "El precio debe ser mayor a 0")
     private Double price;
     
-    // Variable innecesaria pero que no afecta 
     private String additionalNotes;
 }
