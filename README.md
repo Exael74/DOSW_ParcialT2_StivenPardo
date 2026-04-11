@@ -35,7 +35,7 @@ Se pueden generar varios problemas como un cambio BD que pueda afectar a Backend
 
 ## 6 Diagrama de componentes especificos
 
-![](https://github.com/Exael74/DOSW_ParcialT2_StivenPardo/blob/featureTeorica/docs/uml/Diagramas%20de%20componentes%20especificos.png)
+![](https://github.com/Exael74/DOSW_ParcialT_StivenPardo/blob/featureTeorica/docs/uml/Diagrama%20de%20Componentes%20Espec%C3%ADficos.png)
 
 ## 7 ¿Cuáles son las diferencias entre un validador, una utilidad y un servicio?
 
