@@ -418,9 +418,9 @@ Se pueden generar varios problemas como un cambio BD que pueda afectar a Backend
 **Servicio :** es el que maneja los casos de uso
 
 
-
 ## 8 Diagrama de clases
 
+![](https://github.com/Exael74/DOSW_ParcialT2_StivenPardo/blob/develop/docs/uml/DIAGRAMA%20DE%20CLASES%20PARCIAL.png)
 
 ## 9 Diagrama de entidad relacion
 
