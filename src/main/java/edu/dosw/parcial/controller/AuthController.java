@@ -15,13 +15,31 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
+@Tag(name = "Authentication", description = "Endpoints para registro y autenticación de usuarios")
 public class AuthController {
     private final UserService userService;
     private final UserControllerMapper userControllerMapper;
+    
+    @Operation(summary = "Registrar un usuario nuevo", description = "Registra a un pasajero o conductor validando las reglas de negocio, incluyendo su información vehicular si aplica.")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "201", description = "Usuario registrado exitosamente", 
+                content = @Content(mediaType = "application/json", schema = @Schema(implementation = RegisterResponseDTO.class))),
+            @ApiResponse(responseCode = "400", description = "Error de validación en la estructura o reglas de negocio", 
+                content = @Content),
+            @ApiResponse(responseCode = "409", description = "Conflicto: El correo ya se encuentra registrado", 
+                content = @Content)
+    })
     @PostMapping("/register")
     public ResponseEntity<RegisterResponseDTO> register(
             @Valid @RequestBody RegisterRequestDTO request) {
