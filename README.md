@@ -523,15 +523,10 @@ Si en el pipeline ocurre una falla no se debe permitir el despliege ya que el pi
 - Contraseñas
 - Token de autentificacion
 - Informacion personal del usuario
-
+  
 ## 16 Figma
-
-## Evidencias de Cuentas
-
-### Herramienta de Modelado (Lucidchart / Draw.io / Miro)
-
 ### Herramienta de Diseño de Interfaces (Figma)
-
+https://www.figma.com/design/scUouCgTyxG1gxnLA4iKUo/Sin-t%C3%ADtulo?node-id=0-1&t=sLIfsYHyIbOYy2MM-1
 
 
 
